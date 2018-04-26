@@ -4,40 +4,40 @@ import com.flexionmobile.codingchallenge.integration.Purchase;
 
 public class PurchaseImpl implements Purchase {
 
-    private String mId;
-    private boolean mIsConsumed;
-    private String mItemId;
+    private String id;
+    private boolean isConsumed;
+    private String itemId;
 
-    public PurchaseImpl(String id, boolean isConsumed, String itemId) {
-        this.mId = id;
-        this.mIsConsumed = isConsumed;
-        this.mItemId = itemId;
+    public PurchaseImpl(String idInit, boolean isConsumedInit, String itemIdInit) {
+        this.id = idInit;
+        this.isConsumed = isConsumedInit;
+        this.itemId = itemIdInit;
     }
 
     @Override
     public String getId() {
-        return mId;
+        return id;
     }
 
     @Override
     public boolean getConsumed() {
-        return mIsConsumed;
+        return isConsumed;
     }
 
     @Override
     public String getItemId() {
-        return mItemId;
+        return itemId;
     }
 
-    public void setId(String id) {
-        this.mId = id;
+    public void setId(String idInit) {
+        this.id = idInit;
     }
 
-    public void setIsConsumed(boolean isConsumed) {
-        this.mIsConsumed = isConsumed;
+    public void setIsConsumed(boolean isConsumedInit) {
+        this.isConsumed = isConsumedInit;
     }
 
-    public void setItemId(String itemId) {
-        this.mItemId = itemId;
+    public void setItemId(String itemIdInit) {
+        this.itemId = itemIdInit;
     }
 }
